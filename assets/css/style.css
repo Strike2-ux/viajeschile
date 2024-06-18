@@ -19,7 +19,8 @@ span {
   height: 10%;
 }
 
-.iconos {
+.iconos,
+.card {
   width: 100%;
   background: #00ddff;
 }

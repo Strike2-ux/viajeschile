@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  // smooth scroll
   $('a').on('click', function (event) {
     if (this.hash !== '') {
       event.preventDefault();
@@ -16,7 +15,6 @@ $(document).ready(function () {
     }
   });
 
-  // script de tooltip
   const tooltipTriggerList = document.querySelectorAll(
     '[data-bs-toggle="tooltip"]'
   );
