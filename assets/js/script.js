@@ -1,0 +1,26 @@
+$(document).ready(function () {
+  // smooth scroll
+  $('a').on('click', function (event) {
+    if (this.hash !== '') {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        100,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
+
+  // script de tooltip
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  );
+  const tooltipList = [...tooltipTriggerList].map(
+    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+  );
+});
